@@ -1,44 +1,45 @@
 import React from "react";
 import "./Weather.css";
+import Form from "./Form";
 
 export default function Weather() {
   return (
     <div className="Weather">
-      <form>
-        <input
-          type="search"
-          placeholder="Type a city..."
-          className="city-search"
-        />
-        <input type="submit" value="Search" className="city-control" />
-      </form>
-      <h2>Display city</h2>
+      <h1>The Weather Channel</h1>
+      <Form />
+      <h2>Boston</h2>
       <div className="row">
-        <div className="col-3">
+        <div className="col-3 first">
           <ul>
-            <li>day</li>
-            <li>date</li>
-            <li>time</li>
+            <li>Monday</li>
+            <li>22/05/2022</li>
+            <li>11:30 am</li>
           </ul>
         </div>
-        <div className="col-3">
+        <div className="col-3 second">
           <ul>
-            <li>
+            <li className="img">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                 alt="weather-icon"
               />
             </li>
-            <li>weather description</li>
+            <li className="description">sunny</li>
           </ul>
         </div>
-        <div className="col-3">
+        <div className="col-3 third">
           {" "}
           <ul>
-            <li>temperature: 12°C</li>
+            <li>
+              temperature: <span className="celsius">12°C</span> |{" "}
+              <span classNamee="fahren">65°F</span>
+            </li>
             <li>precipitation: 20% rain</li>
             <li>humidity: 60%</li>
           </ul>
+        </div>
+        <div className="col-3 four">
+          <div className="radar">radar view</div>
         </div>
       </div>
     </div>

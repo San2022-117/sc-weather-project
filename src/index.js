@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css"; //how to implement bts in the first week project of SCReact in the beggining
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

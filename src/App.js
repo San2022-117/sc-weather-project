@@ -4,9 +4,7 @@ import Weather from "./Weather";
 export default function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Weather App</h1>
-      </header>
+      <header>{}</header>
       <div className="container">
         <div className="Weather">
           <Weather />
@@ -21,7 +19,7 @@ export default function App() {
           >
             repository
           </a>{" "}
-          for this poject.
+          for this project.
         </footer>
       </div>
     </div>

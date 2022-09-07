@@ -1,0 +1,14 @@
+.App {
+  padding: 10px;
+  margin: 40px auto;
+}
+
+.App footer {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/*
+ if we have problem aligning the whole apps content we can use max-width the same vaule as in the weather component /whatever we want to align it with 
+*/

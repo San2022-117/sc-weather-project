@@ -7,15 +7,37 @@
     rgba(0, 212, 255, 1) 100%
   );
   color: aliceblue;
-  border-radius: 2px;
+  padding: 20px;
+
+  border-radius: 4px;
+}
+div.Weather {
+  margin: 0 auto;
 }
 
+.Weather,
+h1 {
+  font-size: 24px;
+}
+
+.Weather,
+h2 {
+  font-size: 22px;
+  padding: 16px;
+}
+
+div.col-3.first {
+  width: 200px;
+}
+div.col-3.second {
+  width: 200px;
+}
 .Weather,
 ul {
   list-style: none;
+  font-size: 16px;
 }
 
-.Weather,
-form {
-  padding: 25px;
+li.description {
+  margin-left: 10px;
 }
