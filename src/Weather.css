@@ -26,6 +26,25 @@ h2 {
   padding: 16px;
 }
 
+.Form {
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: -40px;
+  border-radius: 4px;
+}
+
+div.Form {
+  margin-left: -20px;
+  padding: 25px;
+}
+
+.Form,
+input.city-control {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
 div.col-3.first {
   width: 200px;
 }
@@ -39,5 +58,6 @@ ul {
 }
 
 li.description {
+  color: white;
   margin-left: 10px;
 }
