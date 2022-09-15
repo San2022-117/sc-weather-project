@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormDay from "./FormDay";
+import FormDate from "./FormDate";
+import FormTime from "./FormTime";
 
 export default function Weather() {
   //const [ready, setReady] = useState(false); // here we have to use conditional rendering // at last, we move this as a value to the setWeatherData
   //let [temperature, setTemperature] = useState(null); //default value = (null) !!
-  let [weatherData, setWeatherData] = useState({ ready: false });
+  let [weatherData, setWeatherData] = useState({ ready: false }); // its default value is `false`
   function retrieveData(response) {
     console.log(response.data);
     //setTemperature(response.data.main.temp);
     setWeatherData({
       ready: true,
-      date: "Tue, 07/09/2022",
+      day: new Date(response.data.dt * 1000),
+      date: new Date(response.data.dt * 1000),
+      time: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       city: response.data.name,
       wind: response.data.wind.speed,
@@ -40,9 +45,15 @@ export default function Weather() {
         <div className="row">
           <div className="col-3 first">
             <ul>
-              <li>Monday</li>
-              <li>{weatherData.date}</li>
-              <li>11:30 am</li>
+              <li>
+                <FormDay day={weatherData.day} />
+              </li>
+              <li>
+                <FormDate date={weatherData.day} />
+              </li>
+              <li>
+                <FormTime time={weatherData.day} />
+              </li>
             </ul>
           </div>
           <div className="col-3 second">
